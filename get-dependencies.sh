@@ -14,7 +14,8 @@ pacman -Syu --noconfirm    \
     python                 \
     python-distutils-extra \
     python-setuptools      \
-    rsync
+    rsync                  \
+    sdl2_mixer
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
