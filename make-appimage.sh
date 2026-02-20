@@ -8,7 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/256x256/apps/freedink.png
+export ICON=/usr/share/icons/hicolor/scalable/apps/freedink.svg
 export DESKTOP=/usr/share/applications/freedink.desktop
 export STARTUPWMCLASS=
 export DEPLOY_OPENGL=1
