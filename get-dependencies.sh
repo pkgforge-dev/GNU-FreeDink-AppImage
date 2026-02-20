@@ -6,12 +6,14 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    glm      \
-    help2man \
-    intltool \
-    libdecor \
-    python   \
+pacman -Syu --noconfirm    \
+    glm                    \
+    help2man               \
+    intltool               \
+    libdecor               \
+    python                 \
+    python-distutils-extra \
+    python-setuptools      \
     rsync
 
 echo "Installing debloated packages..."
