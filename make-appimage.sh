@@ -14,7 +14,7 @@ export STARTUPWMCLASS=
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/freedink-dfarc
+quick-sharun /usr/bin/freedink /usr/bin/freedink-dfarc
 
 # Additional changes can be done in between here
 
