@@ -14,8 +14,7 @@ pacman -Syu --noconfirm    \
     python                 \
     python-distutils-extra \
     python-setuptools      \
-    rsync                  \
-    wildmidi
+    rsync
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
