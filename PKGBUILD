@@ -29,7 +29,6 @@ depends=('sdl2_image' 'sdl2_mixer' 'sdl2_ttf' 'sdl2_gfx' 'fontconfig' # For the 
          #'timidity++'
         )
 makedepends=('help2man' 'rsync' 'cxxtest' 'glm' 'intltool' 'git')
-install=freedink.install
 
 
 # For the game to play midi files, one needs to install either timidity++ or fluidsynth and a soundfont.
