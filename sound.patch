@@ -5,7 +5,7 @@
    /* Work-around to disable fluidsynth and fallback to TiMidity++: */
    /* TODO: allow user to set it at run-time */
 -  /* SDL_setenv("SDL_SOUNDFONTS="); */
-+     SDL_setenv("SDL_SOUNDFONTS", "/usr/share/soundfonts/FluidR3_GM.sf2", 0);
++     SDL_setenv("SDL_SOUNDFONTS", "/usr/share/soundfonts/default.sf2", 0);
    /* SDL_setenv("SDL_FORCE_SOUNDFONTS=1"); */
  
    /* To specify an alternate timidity.cfg */
