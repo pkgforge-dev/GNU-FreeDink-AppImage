@@ -97,7 +97,7 @@ prepare () {
   patch --directory="${srcdir}/freedink-data-${_data}" -p1 < ../backport-translations.patch
 
   # Hacking in here the sound changes.
-  patch -p0 < ../sound.patch
+#  patch -p0 < ../sound.patch
 
   # Display correct version in main menu.
   sed '/dversion_string = "v1.08 FreeDink";/ s/v1.08/v1.09/' -i src/game_engine.cpp
