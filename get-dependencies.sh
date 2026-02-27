@@ -7,7 +7,6 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm    \
-    fluidsynth             \
     glm                    \
     help2man               \
     intltool               \
@@ -16,7 +15,7 @@ pacman -Syu --noconfirm    \
     python-distutils-extra \
     python-setuptools      \
     rsync                  \
-    sdl2_mixer
+    wildmidi
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
