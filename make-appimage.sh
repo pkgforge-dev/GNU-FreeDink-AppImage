@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q freedink | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.bg.hook:sdl-soundfonts.src.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/scalable/apps/freedink.svg
 export DESKTOP=/usr/share/applications/freedink.desktop
@@ -15,7 +15,7 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/freedink /usr/bin/freedink-dfarc /usr/bin/freedinkedit /usr/lib/libfluidsynth.so*
-echo 'SDL_SOUNDFONTS=${SHARUN_DIR}/share/soundfonts/FluidR3_GM.sf2' >> ./AppDir/.env
+#echo 'SDL_SOUNDFONTS=${SHARUN_DIR}/share/soundfonts/FluidR3_GM.sf2' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
