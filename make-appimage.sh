@@ -15,7 +15,6 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/freedink /usr/bin/freedink-dfarc /usr/bin/freedinkedit /usr/lib/libfluidsynth.so*
-#echo 'SDL_SOUNDFONTS=${SHARUN_DIR}/share/soundfonts/FluidR3_GM.sf2' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
