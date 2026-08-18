@@ -3,11 +3,11 @@
 # GNU-FreeDink-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/GNU-FreeDink-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/GNU-FreeDink-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage/releases/latest)
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/GNU-FreeDink-AppImage)](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/Link4Electronics/GNU-FreeDink-AppImage/blob/main/AppDir/freedink.svg?raw" width="128" />
+  <img src="AppDir/freedink.svg" width="128" />
 </p>
 
 
@@ -19,7 +19,7 @@
 
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
 
 **This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
