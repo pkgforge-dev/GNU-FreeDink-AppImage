@@ -13,11 +13,7 @@ export STARTUPWMCLASS=freedink
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-set -- /usr/bin/freedink /usr/bin/freedinkedit /usr/lib/libfluidsynth.so*
-if [ -x /usr/bin/freedink-dfarc ]; then
-    set -- "$@" /usr/bin/freedink-dfarc
-fi
-quick-sharun "$@"
+quick-sharun /usr/bin/freedink /usr/bin/freedink-dfarc /usr/bin/freedinkedit /usr/lib/libfluidsynth.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
