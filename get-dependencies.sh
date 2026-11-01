@@ -42,7 +42,6 @@ VERSION=109.6
 echo "$VERSION" > ~/version
 REPO="https://ftp.gnu.org/gnu/freedink/freedink-${VERSION}.tar.gz"
 
-#minimal rest of pkgbuild compile steps  without bashism here
 DATA_VERSION=1.08.20190120
 DFARC_VERSION=3.14
 PATCHES="$PWD/patches"
@@ -79,18 +78,4 @@ if ./configure --prefix=/usr --disable-desktopfiles --with-wx-config=/usr/bin/wx
     mv /usr/bin/dfarc /usr/bin/freedink-dfarc
 fi
 cd ..
-
-rm -f /usr/share/applications/freedinkedit.desktop
-cat >> /usr/share/applications/freedink.desktop << 'EOF'
-Actions=Editor;DFArc;
-
-[Desktop Action Editor]
-Name=FreeDink Editor
-Exec=freedinkedit
-
-[Desktop Action DFArc]
-Name=DFArc Mod Manager
-Exec=freedink-dfarc
-EOF
-
 rm -f /usr/bin/dink /usr/bin/dinkedit
